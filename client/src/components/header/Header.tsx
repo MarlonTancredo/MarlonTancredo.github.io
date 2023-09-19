@@ -1,6 +1,8 @@
+import NavBar from "../nav-bar/NavBar"
+
 const Header = () => {
     return (
-        <>Header</>
+        <NavBar />
     )
 }
 
