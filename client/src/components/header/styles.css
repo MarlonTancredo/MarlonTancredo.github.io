@@ -1,0 +1,22 @@
+.navbar__container {
+  display: flex;
+  list-style: none;
+  width: 80%;
+  justify-content: center;
+}
+
+.navbar__item {
+  padding: 1rem;
+  text-decoration: none;
+}
+
+.navbar__link {
+  text-decoration: none;
+}
+
+.title__container {
+  display: flex;
+  flex-direction: column;
+  width: 20%;
+  margin-left: 1rem;
+}
