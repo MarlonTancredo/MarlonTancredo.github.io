@@ -3,7 +3,7 @@ const ConfessToUs = () => {
         <>
             <h1>Confess to us</h1>
         </>
-    )
-}
+    );
+};
 
-export default ConfessToUs
+export default ConfessToUs;

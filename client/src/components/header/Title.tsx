@@ -1,4 +1,4 @@
-import "./styles.css"
+import "./styles.css";
 
 const Title = () => {
     return (
@@ -7,7 +7,7 @@ const Title = () => {
             <p>JUSTICE</p>
             <p>DEPARTMENT</p>
         </div>
-    )
-}
+    );
+};
 
-export default Title
+export default Title;

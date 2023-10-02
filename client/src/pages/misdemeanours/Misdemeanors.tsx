@@ -3,7 +3,7 @@ const Misdemeanours = () => {
         <>
             <h1>Misdemeanours</h1>
         </>
-    )
-}
+    );
+};
 
-export default Misdemeanours
+export default Misdemeanours;

@@ -6,10 +6,11 @@ const Home: React.FC = () => {
                 <br />
                 <br />
                 <br />
-                Here you can browse a list of recent misdemeanours committed by our citzens, or you can confess to your own misdemeanour.
+                Here you can browse a list of recent misdemeanours committed by our citzens, or you can confess to your
+                own misdemeanour.
             </p>
         </>
-    )
-}
+    );
+};
 
-export default Home
+export default Home;
