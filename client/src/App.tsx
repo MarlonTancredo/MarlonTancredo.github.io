@@ -3,13 +3,13 @@ import Router from "./components/router/Router";
 import "./App.css";
 
 function App() {
-  return (
-    <div className="container">
-      <BrowserRouter>
-        <Router />
-      </BrowserRouter>
-    </div>
-  );
+    return (
+        <div className="container">
+            <BrowserRouter>
+                <Router />
+            </BrowserRouter>
+        </div>
+    );
 }
 
 export default App;
