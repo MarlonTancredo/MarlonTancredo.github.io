@@ -1,7 +1,7 @@
 import useMisdemeanour from "../../hooks/useMisdemeanour";
 
 const Misdemeanours = () => {
-    const [data] = useMisdemeanour("http://localhost:8080/api/misdemeanours/5");
+    const [data] = useMisdemeanour("http://localhost:8080/api/misdemeanours/4");
 
     return (
         <table style={{ textAlign: "center" }}>
