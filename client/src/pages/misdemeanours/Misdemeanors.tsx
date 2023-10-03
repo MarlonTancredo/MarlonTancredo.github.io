@@ -13,14 +13,14 @@ const Misdemeanours = () => {
                     <th>Punishment Idea</th>
                 </tr>
             </thead>
-            {data?.map(({ citizenId, date, misdemeanour }, id: number) => (
+            {data?.map(({ citizenId, date, misdemeanour }) => (
                 <tbody key={citizenId}>
                     <tr>
                         <td>{citizenId}</td>
                         <td>{date}</td>
                         <td>{misdemeanour}</td>
                         <td>
-                            <img src={`https://picsum.photos/id/${id}/50/50`} />
+                            <img src={`https://picsum.photos/80/80?random=${citizenId}`} />
                         </td>
                     </tr>
                 </tbody>
