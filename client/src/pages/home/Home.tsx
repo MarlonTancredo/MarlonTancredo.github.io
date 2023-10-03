@@ -1,7 +1,7 @@
 const Home: React.FC = () => {
     return (
         <>
-            <p style={{ textAlign: "justify", margin: "1rem" }}>
+            <p style={{ textAlign: "justify" }}>
                 Welcome to the home of the justice department of fakelandia.
                 <br />
                 <br />
