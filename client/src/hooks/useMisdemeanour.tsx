@@ -13,6 +13,7 @@ const useMisdemeanour = (url: string) => {
         const fetchMisdemeanour = async () => {
             const response = await fetch(url);
             const misdemeanoursData = await response.json();
+
             setData(misdemeanoursData.misdemeanours);
         };
         fetchMisdemeanour();
