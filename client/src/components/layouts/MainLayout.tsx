@@ -4,21 +4,21 @@ import Footer from "../footer/Footer";
 
 const MainLayout = () => {
     return (
-        <>
+        <div>
             <Header />
             <main
                 style={{
                     display: "flex",
                     flexDirection: "column",
                     alignItems: "center",
-                    height: "100%",
+                    minHeight: "60vh",
                     width: "80vw",
                 }}
             >
                 <Outlet />
             </main>
             <Footer />
-        </>
+        </div>
     );
 };
 
