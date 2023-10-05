@@ -12,17 +12,14 @@ const NavBar = () => {
 
     const handleHome = () => {
         setisActive({ ...links, isHomeActive: true });
-        console.log(isActive);
     };
 
     const handleMisdemeanours = () => {
         setisActive({ ...links, isMisdemeanoursActive: true });
-        console.log(isActive);
     };
 
     const handleConfess = () => {
         setisActive({ ...links, isConfessActive: true });
-        console.log(isActive);
     };
 
     return (
