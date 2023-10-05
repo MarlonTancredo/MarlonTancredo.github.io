@@ -1,12 +1,11 @@
-import { Route, Routes } from "react-router-dom"
-import Home from "../../pages/home/Home"
-import MainLayout from "../layouts/MainLayout"
-import Misdemeanours from "../../pages/misdemeanours/Misdemeanors"
-import ConfessToUs from "../../pages/confess-to-us/ConfessToUs"
-import NotFound from "../not-found/NotFound"
+import { Route, Routes } from "react-router-dom";
+import Home from "../../pages/home/Home";
+import MainLayout from "../layouts/MainLayout";
+import Misdemeanours from "../../pages/misdemeanours/Misdemeanors";
+import ConfessToUs from "../../pages/confess-to-us/ConfessToUs";
+import NotFound from "../not-found/NotFound";
 
-
-const Router = () =>
+const Router = () => (
     <Routes>
         <Route path="/" element={<MainLayout />}>
             <Route index element={<Home />} />
@@ -15,5 +14,6 @@ const Router = () =>
             <Route path="*" element={<NotFound />} />
         </Route>
     </Routes>
+);
 
-export default Router
+export default Router;
