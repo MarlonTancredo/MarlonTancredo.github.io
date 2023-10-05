@@ -1,26 +1,8 @@
-import { useState } from "react";
-import { NavLink } from "react-router-dom";
-
-const links = {
-    isHomeActive: false,
-    isMisdemeanoursActive: false,
-    isConfessActive: false,
-};
+import { NavLink, useLocation } from "react-router-dom";
 
 const NavBar = () => {
-    const [isActive, setisActive] = useState(links);
-
-    const handleHome = () => {
-        setisActive({ ...links, isHomeActive: true });
-    };
-
-    const handleMisdemeanours = () => {
-        setisActive({ ...links, isMisdemeanoursActive: true });
-    };
-
-    const handleConfess = () => {
-        setisActive({ ...links, isConfessActive: true });
-    };
+    const location = useLocation();
+    const { pathname } = location;
 
     return (
         <>
@@ -29,8 +11,7 @@ const NavBar = () => {
                     <NavLink
                         to="/"
                         className="navbar__link"
-                        onClick={handleHome}
-                        style={isActive.isHomeActive ? { color: "red" } : { color: "black" }}
+                        style={pathname === "/" ? { color: "red" } : { color: "black" }}
                     >
                         Home
                     </NavLink>
@@ -39,8 +20,7 @@ const NavBar = () => {
                     <NavLink
                         to="/misdemeanours"
                         className="navbar__link"
-                        onClick={handleMisdemeanours}
-                        style={isActive.isMisdemeanoursActive ? { color: "red" } : { color: "black" }}
+                        style={pathname === "/misdemeanours" ? { color: "red" } : { color: "black" }}
                     >
                         Misdemeanours
                     </NavLink>
@@ -49,8 +29,7 @@ const NavBar = () => {
                     <NavLink
                         to="/confess-to-us"
                         className="navbar__link"
-                        onClick={handleConfess}
-                        style={isActive.isConfessActive ? { color: "red" } : { color: "black" }}
+                        style={pathname === "/confess-to-us" ? { color: "red" } : { color: "black" }}
                     >
                         Confess to us
                     </NavLink>
