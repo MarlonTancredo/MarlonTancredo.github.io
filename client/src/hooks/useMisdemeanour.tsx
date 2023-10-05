@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
 
 type Misdemeanours = {
-    citizenId: number;
+    citizenId: number | string;
     misdemeanour: string;
     date: string;
 };
@@ -11,6 +11,9 @@ const useMisdemeanour = (url: string) => {
 
     useEffect(() => {
         const fetchMisdemeanour = async () => {
+            if (!url) {
+                return;
+            }
             const response = await fetch(url);
             const misdemeanoursData = await response.json();
 
@@ -19,7 +22,7 @@ const useMisdemeanour = (url: string) => {
         fetchMisdemeanour();
     }, [url]);
 
-    return [data];
+    return data;
 };
 
 export default useMisdemeanour;
