@@ -1,11 +1,6 @@
 import { ReactPortal, createContext } from "react";
+import { Misdemeanours } from "../types/misdemeanors";
 import useMisdemanours from "../hooks/useMisdemeanours";
-
-type Misdemeanours = {
-    citizenId: number | string;
-    misdemeanour: string;
-    date: string;
-};
 
 const UserContext = createContext<Misdemeanours[] | undefined>([]);
 

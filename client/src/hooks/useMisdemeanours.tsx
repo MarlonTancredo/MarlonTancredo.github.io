@@ -1,10 +1,5 @@
 import { useEffect, useState } from "react";
-
-type Misdemeanours = {
-    citizenId: number | string;
-    misdemeanour: string;
-    date: string;
-};
+import { Misdemeanours } from "../types/misdemeanors";
 
 const useMisdemanours = (url: string) => {
     const [data, setData] = useState<Misdemeanours[]>();
