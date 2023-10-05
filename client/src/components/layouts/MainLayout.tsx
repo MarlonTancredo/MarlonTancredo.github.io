@@ -1,6 +1,7 @@
 import { Outlet } from "react-router-dom";
 import Header from "../header/Header";
 import Footer from "../footer/Footer";
+import { UserContextProvider } from "../UserContextProvider";
 
 const MainLayout = () => {
     return (
@@ -15,7 +16,9 @@ const MainLayout = () => {
                     width: "80vw",
                 }}
             >
-                <Outlet />
+                <UserContextProvider key={null} type={""} props={undefined}>
+                    <Outlet />
+                </UserContextProvider>
             </main>
             <Footer />
         </div>
