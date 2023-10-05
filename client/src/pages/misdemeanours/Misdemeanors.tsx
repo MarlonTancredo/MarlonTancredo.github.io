@@ -1,5 +1,5 @@
 import { useContext } from "react";
-import { UserContext } from "../../components/UserContextProvider";
+import { UserContext } from "../../components/providers/UserContextProvider";
 
 const Misdemeanours = () => {
     const data = useContext(UserContext);

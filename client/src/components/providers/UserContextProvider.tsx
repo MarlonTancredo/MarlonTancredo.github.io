@@ -1,6 +1,6 @@
 import { ReactPortal, createContext } from "react";
-import { Misdemeanours } from "../types/misdemeanors";
-import useMisdemanours from "../hooks/useMisdemeanours";
+import { Misdemeanours } from "../../types/misdemeanors";
+import useMisdemanours from "../../hooks/useMisdemeanours";
 
 const UserContext = createContext<Misdemeanours[] | undefined>([]);
 

@@ -1,7 +1,7 @@
 import { Outlet } from "react-router-dom";
 import Header from "../header/Header";
 import Footer from "../footer/Footer";
-import { UserContextProvider } from "../UserContextProvider";
+import { UserContextProvider } from "../providers/UserContextProvider";
 
 const MainLayout = () => {
     return (
