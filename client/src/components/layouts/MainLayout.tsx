@@ -16,7 +16,7 @@ const MainLayout = () => {
                     width: "80vw",
                 }}
             >
-                <UserContextProvider key={null} type={""} props={undefined}>
+                <UserContextProvider>
                     <Outlet />
                 </UserContextProvider>
             </main>
