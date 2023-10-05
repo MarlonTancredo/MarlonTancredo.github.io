@@ -1,9 +1,9 @@
-import { useState } from "react";
-import useMisdemeanour from "../../hooks/useMisdemeanour";
+import { useContext } from "react";
+import { UserContext } from "../../components/UserContextProvider";
 
 const Misdemeanours = () => {
-    const data = useMisdemeanour("http://localhost:8080/api/misdemeanours/4");
-    const [loading] = useState("Loading...");
+    const data = useContext(UserContext);
+    const loading = "Loading...";
 
     if (!data) {
         return (
