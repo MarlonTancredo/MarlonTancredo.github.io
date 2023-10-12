@@ -5,23 +5,21 @@ import { UserContextProvider } from "../providers/UserContextProvider";
 
 const MainLayout = () => {
     return (
-        <div>
-            <Header />
-            <main
-                style={{
-                    display: "flex",
-                    flexDirection: "column",
-                    alignItems: "center",
-                    minHeight: "60vh",
-                    width: "80vw",
-                }}
-            >
-                <UserContextProvider>
+        <UserContextProvider>
+            <div>
+                <Header />
+                <main
+                    style={{
+                        display: "flex",
+                        flexDirection: "column",
+                        alignItems: "center",
+                    }}
+                >
                     <Outlet />
-                </UserContextProvider>
-            </main>
-            <Footer />
-        </div>
+                </main>
+                <Footer />
+            </div>
+        </UserContextProvider>
     );
 };
 
