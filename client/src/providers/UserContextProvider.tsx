@@ -1,6 +1,6 @@
 import { ReactNode, createContext } from "react";
-import { Misdemeanours } from "../../types/misdemeanors";
-import useMisdemanours from "../../hooks/useMisdemeanours";
+import { Misdemeanours } from "../types/misdemeanors";
+import useMisdemanours from "../hooks/useMisdemeanours";
 
 type Props = {
     children: ReactNode;

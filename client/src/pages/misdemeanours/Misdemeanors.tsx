@@ -1,5 +1,5 @@
 import { useContext } from "react";
-import { UserContext } from "../../components/providers/UserContextProvider";
+import { UserContext } from "../../providers/UserContextProvider";
 import MisdemeanorsEmoji from "./MisdemeanorsEmoji";
 
 const Misdemeanours = () => {

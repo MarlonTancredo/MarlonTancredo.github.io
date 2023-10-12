@@ -1,9 +1,9 @@
 import { Route, Routes } from "react-router-dom";
-import Home from "../../pages/home/Home";
+import Home from "../pages/home/Home";
 import MainLayout from "../layouts/MainLayout";
-import Misdemeanours from "../../pages/misdemeanours/Misdemeanors";
-import ConfessToUs from "../../pages/confess-to-us/ConfessToUs";
-import NotFound from "../not-found/NotFound";
+import Misdemeanours from "../pages/misdemeanours/Misdemeanors";
+import ConfessToUs from "../pages/confess-to-us/ConfessToUs";
+import NotFound from "../components/not-found/NotFound";
 
 const Router = () => (
     <Routes>
