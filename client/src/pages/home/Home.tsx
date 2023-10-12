@@ -1,4 +1,4 @@
-const Home: React.FC = () => {
+const Home = () => {
     return (
         <>
             <p style={{ textAlign: "justify" }}>
@@ -6,7 +6,7 @@ const Home: React.FC = () => {
                 <br />
                 <br />
                 <br />
-                Here you can browse a list of recent misdemeanours committed by our citzens, or you can confess to your
+                Here you can browse a list of recent misdemeanours committed by our citizens, or you can confess to your
                 own misdemeanour.
             </p>
         </>
