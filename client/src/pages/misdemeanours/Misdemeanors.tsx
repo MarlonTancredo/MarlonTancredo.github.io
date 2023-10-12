@@ -1,5 +1,6 @@
 import { useContext } from "react";
 import { UserContext } from "../../components/providers/UserContextProvider";
+import MisdemeanorsEmoji from "./MisdemeanorsEmoji";
 
 const Misdemeanours = () => {
     const data = useContext(UserContext);
@@ -43,7 +44,9 @@ const Misdemeanours = () => {
                     <tr>
                         <td>{citizenId}</td>
                         <td>{date}</td>
-                        <td>{misdemeanour}</td>
+                        <td>
+                            <MisdemeanorsEmoji message={misdemeanour} />
+                        </td>
                         <td>
                             <img src={`https://picsum.photos/80/80?random=${citizenId}`} />
                         </td>
