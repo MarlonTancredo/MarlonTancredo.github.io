@@ -1,15 +1,12 @@
 {
   "name": "lm-code-intro-react-router-fakelandia",
   "version": "1.0.0",
-  "homepage": "https://github.com/MarlonTancredo/lm-code-intro-react-router-fakelandia",
   "description": "## Introduction",
   "main": "index.js",
   "directories": {
     "doc": "docs"
   },
   "scripts": {
-    "predeploy": "npm run build",
-    "deploy": "gh-pages -d build",
     "start-server": "cd server && npm start",
     "start-client": "cd client && npm run dev",
     "test-client": "cd client && npm test",
@@ -39,7 +36,6 @@
     "url": "https://github.com/techreturners/lm-code-intro-react-router-fakelandia/issues"
   },
   "devDependencies": {
-    "@types/cors": "^2.8.13",
-    "gh-pages": "^6.0.0"
+    "@types/cors": "^2.8.13"
   }
 }
