@@ -2,7 +2,7 @@
     "name": "client",
     "private": true,
     "version": "0.0.0",
-    "homepage": "https://marlontancredo.github.io/fakelandia-project",
+    "homepage": "https://MarlonTancredo.github.io/fakelandia-project",
     "type": "module",
     "scripts": {
         "predeploy": "npm run build",
